@@ -43,14 +43,17 @@
 					<section id="banner" class="major">
 						<div class="inner">
 							<header class="major">
-								<h1>緯宸室內設計</h1>
+								<h1>宸室室內設計</h1>
 							</header>
 							<div class="content">
+							
 								<p>室內設計風格的選擇反映了個人品味、文化背景和生活需求。 它們提供了一種方式，讓我們能夠將個人身份和故事融入日常生活的空間中。<br />
 									無論是追求功能性與簡潔的現代風格，還是渴望自然和舒適感的北歐風格，甚至是喜愛古典和奢華的裝飾，每一種風格都能夠創造出一個既符合實用需求又能反映個人風格的居住環境。</p>
+									<br/><br/>
 								<ul class="actions">
 									<li><a href="#one" class="button next scrolly">更多室內設計作品</a></li>
 								</ul>
+							
 							</div>
 						</div>
 					</section>
@@ -120,11 +123,11 @@
 							<section id="two">
 								<div class="inner">
 									<header class="major">
-										<h2>室內空間設計品牌理念</h2>
+										<h2 class="my-color">室內空間設計作品</h2>
 									</header>
 									<p>宸室設計團隊為專業設計團隊，在工程施工上精準度的掌控，設計美學的比例美感，風格色感的創新我們都維持一定的設計水準，尺度大至建築外觀小至門片把手，我們都想對物件做出新的解釋，讓生活美學更趨完美。</p>
 									<ul class="actions">
-										<li><a href="landing.html" class="button next">關於宸室</a></li>
+										<li><a href="landing.html" target="_blank" class="button next">關於宸室</a></li>
 									</ul>
 								</div>
 							</section>
@@ -135,10 +138,11 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
+								<!-- 這一行需要加上onsubmit="return mailto()" -->
+								<form method="post" action="#"  onsubmit="return mailto()">
 									<div class="fields">
 										<div class="field half">
-											<label for="name">Name</label>
+											<label for="name">名稱</label>
 											<input type="text" name="name" id="name" />
 										</div>
 										<div class="field half">
@@ -146,16 +150,30 @@
 											<input type="text" name="email" id="email" />
 										</div>
 										<div class="field">
-											<label for="message">Message</label>
+											<label for="message">訊息</label>
 											<textarea name="message" id="message" rows="6"></textarea>
 										</div>
 									</div>
+							
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
+										<li><input type="submit" value="傳送" class="primary" /></li></a>
+										<li><input type="reset" value="清除" /></li>
 									</ul>
+							
+									<!-- 呼叫email程式的語法:start -->
+									<script>
+										function mailto() {
+											name = document.getElementsByName('name')[0].value; // 把使用者輸入的名稱拿出來用
+											email = document.getElementsByName('email')[0].value; // 把使用者輸入的email拿出來用
+											message = document.getElementsByName('message')[0].value.replaceAll('\n', '%0D%0A'); // 把使用者輸入的內容拿出來用
+											window.location.href = "mailto:twcchowar@gmail.com?subject=我沒有問題&body=您好, 我是" + name + ":%0D%0A" + message;
+											return false;
+										}
+									</script>
+									<!-- 呼叫email程式的語法:end -->
 								</form>
 							</section>
+							
 							<section class="split">
 								<section>
 									<div class="contact-method">
@@ -167,17 +185,15 @@
 								<section>
 									<div class="contact-method">
 										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
+										<h3>電話</h3>
 										<span>(02)26708626 / 0966-580-293</span>
 									</div>
 								</section>
 								<section>
 									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>No. 11, Lane 338<br />
-										New Taipei City, Yingge District <br />
-										Taiwan</span>
+										<span class="icon brands alt fa-line"></span>
+										<h3>LINE ID</h3>
+										<span>501294386<br /> <br /></span>
 									</div>
 								</section>
 							</section>
@@ -188,11 +204,11 @@
 					<footer id="footer">
 						<div class="inner">
 							<ul class="icons">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://x.com/?lang=zh-Hant" target="_blank" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/?locale=zh_TW" target="_blank" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/" target="_blank" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<!-- <li><a href="#" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
+								<!-- <li><a href="#" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
 							</ul>
 							<ul class="copyright">
 								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>

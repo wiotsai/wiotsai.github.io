@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #242943;
+		background: #86794e;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -198,6 +198,7 @@ input, select, textarea {
 
 	h2 {
 		font-size: 1.75em;
+		color :#e7fabc
 	}
 
 	h3 {
@@ -1912,7 +1913,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: rgba(212, 212, 255, 0.035);
+		background: rgba(212, 212, 255, 0.1);
 		border: none;
 		border-radius: 0;
 		color: inherit;
@@ -2134,9 +2135,9 @@ input, select, textarea {
 		}
 
 		.icon.alt:before {
-			background-color: #ffffff;
+			background-color: #fdfdfd;
 			border-radius: 100%;
-			color: #242943;
+			color: #437e50;
 			display: inline-block;
 			height: 2em;
 			line-height: 2em;
@@ -2521,7 +2522,7 @@ input, select, textarea {
 		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
-		font-size: 0.8em;
+		font-size: 1.2em;
 		font-weight: 600;
 		height: 3.5em;
 		letter-spacing: 0.25em;
@@ -3454,11 +3455,11 @@ input, select, textarea {
 						max-width: 100%;
 					}
 
-			#banner > .inner .content {
+			#banner > .inner .entcont {
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
-				display: flex;
+				display: block;
 				-moz-align-items: center;
 				-webkit-align-items: center;
 				-ms-align-items: center;
@@ -3591,7 +3592,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #2a2f4a;
+		background-color: #e7b788;
 	}
 
 		#main > * {
@@ -3951,4 +3952,10 @@ input, select, textarea {
 			transform: none;
 			opacity: 1;
 			visibility: visible;
+		}
+		.my-color {
+			color: rgb(255, 255, 255);  /* aaron:自行新增樣式設定首頁下方區塊的標題顏色 */
+		}
+		#two {
+			background-color: rgb(255, 220, 177);  /* aaron: 修改首頁下方區塊背景顏色 */
 		}
