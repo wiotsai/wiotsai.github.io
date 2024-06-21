@@ -2012,7 +2012,7 @@ input, select, textarea {
 
 					#main > .panel.intro .pic:before {
 						content: '';
-						position: absolute;
+						position: relative;
 						top: 0;
 						left: 0;
 						background: url("images/overlay.png");
@@ -2024,7 +2024,7 @@ input, select, textarea {
 					#main > .panel.intro .pic img {
 						position: relative;
 						display: block;
-						position: absolute;
+						position: relative;
 						top: 0;
 						left: 0;
 						width: 100%;
@@ -2037,6 +2037,14 @@ input, select, textarea {
 						-webkit-object-position: center;
 						-ms-object-position: center;
 						object-position: center;
+					}
+
+					.pic2 {
+						align-self: flex-end;
+						right: 0;
+						width: 50%;
+						height: 100%;
+						
 					}
 
 					#main > .panel.intro .pic .arrow {
