@@ -758,7 +758,7 @@ input, select, textarea {
 				}
 
 					.row > * {
-						padding: 1.25em 0 0 1.25em;
+						padding: 0em 0 0 0.5em;
 					}
 
 					.row.gtr-uniform {
@@ -1371,17 +1371,17 @@ input, select, textarea {
 
 	h1 {
 		font-size: 2.4em;
-		letter-spacing: -0.015em;
+		letter-spacing: -0.0em;
 	}
 
 	h2 {
 		font-size: 1.8em;
-		letter-spacing: -0.015em;
+		letter-spacing: -0.0em;
 	}
 
 	h3, h4, h5, h6 {
 		font-size: 1.25em;
-		letter-spacing: -0.015em;
+		letter-spacing: -0.0em;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -2109,7 +2109,7 @@ input, select, textarea {
 						margin: 0.25em 0 0 0;
 					}
 
-				@media screen and (max-width: 980px) {
+				/* @media screen and (max-width: 980px) { */
 
 					#main > .panel.intro {
 						-moz-flex-direction: column;
@@ -2129,7 +2129,7 @@ input, select, textarea {
 							text-align: center;
 						}
 
-				}
+				/* } */
 
 				@media screen and (max-width: 736px) {
 
